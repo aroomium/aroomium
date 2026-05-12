@@ -1,0 +1,34 @@
+name: Waka Readme
+
+on:
+  schedule:
+    # 毎日 JST 朝7時（UTC 22:00）に更新
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    name: Update WakaTime stats on README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          API_BASE_URL: https://wakatime.com/api
+          REPOSITORY: dufaro/dufaro
+          SHOW_TITLE: "True"
+          SECTION_NAME: "waka"
+          BLOCKS: "░▒▓█"
+          CODE_LANG: "txt"
+          TIME_RANGE: "last_7_days"
+          LANG_COUNT: "8"
+          SHOW_TIME: "True"
+          SHOW_TOTAL: "True"
+          SHOW_MASKED_TIME: "False"
+          STOP_AT_OTHER: "True"
+          IGNORED_LANGUAGES: ""
+          COMMIT_MESSAGE: "📊 Update WakaTime stats"
