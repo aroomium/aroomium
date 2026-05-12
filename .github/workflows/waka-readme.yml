@@ -1,4 +1,4 @@
-name: Waka Readme
+name: Waka Readme Stats
 
 on:
   schedule:
@@ -11,24 +11,26 @@ permissions:
 
 jobs:
   update-readme:
-    name: Update WakaTime stats on README
+    name: Update WakaTime + GitHub stats on README
     runs-on: ubuntu-latest
     steps:
-      - uses: athul/waka-readme@master
+      - uses: anmol098/waka-readme-stats@master
         with:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          API_BASE_URL: https://wakatime.com/api
-          REPOSITORY: dufaro/dufaro
-          SHOW_TITLE: "True"
-          SECTION_NAME: "waka"
-          BLOCKS: "░▒▓█"
-          CODE_LANG: "txt"
-          TIME_RANGE: "last_7_days"
-          LANG_COUNT: "8"
-          SHOW_TIME: "True"
-          SHOW_TOTAL: "True"
-          SHOW_MASKED_TIME: "False"
-          STOP_AT_OTHER: "True"
-          IGNORED_LANGUAGES: ""
-          COMMIT_MESSAGE: "📊 Update WakaTime stats"
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_EDITORS: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_PROFILE_VIEWS: "False"
+          SHOW_LOC_CHART: "True"
+          SHOW_COMMIT: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_TOTAL_CODE_TIME: "True"
+          COMMIT_BY_ME: "True"
+          COMMIT_MESSAGE: "📊 Update README with WakaTime stats"
+          LOCALE: "ja"

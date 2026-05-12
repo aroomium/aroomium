@@ -9,8 +9,7 @@
 
 - 🎓 専門学校でモバイルアプリ開発を勉強中
 - 📱 **iOS / Swift**、**Web (Next.js)**、**Java** を中心に学習
-- 🌐 ネットワーク・インフラ（Ubiquiti / WiFi 7 / IPv6）も大好き
-- 🍫 趣味は **カヌレ作り**、ディズニーパーク巡り、ガジェット触り
+- 🍪 趣味は **お菓子作り**、ディズニーパーク巡り、ガジェット触り
 - 📫 GitHub: [@dufaro](https://github.com/dufaro)
 
 ---
@@ -41,10 +40,10 @@
 
 ---
 
-### ⏱ Weekly Coding Activity (WakaTime)
+### ⏱ Code Activity (WakaTime)
 
 <!--START_SECTION:waka-->
-WakaTime の統計はまだ取得されていません。GitHub Actions が初回実行されると、ここに自動で更新されます ⏳
+WakaTime の統計はまだ取得されていません。GitHub Actions が初回実行されると、ここに **時間帯別・曜日別の活動分布**、**今週使った言語**、**エディタ別の時間** などが自動表示されます ⏳
 <!--END_SECTION:waka-->
 
 ---
