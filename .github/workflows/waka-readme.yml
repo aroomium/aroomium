@@ -33,4 +33,4 @@ jobs:
           SHOW_TOTAL_CODE_TIME: "True"
           COMMIT_BY_ME: "True"
           COMMIT_MESSAGE: "📊 Update README with WakaTime stats"
-          LOCALE: "ja"
+          LOCALE: "en"
