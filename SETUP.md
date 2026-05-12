@@ -11,22 +11,9 @@ README.md がプロフィールページに自動で表示されます。
    - **Name**: `WAKATIME_API_KEY`
    - **Secret**: コピーしたAPIキー
 
-## 2. GitHub Personal Access Token (PAT) を作って Secrets に登録
+※ 古い `GH_TOKEN` Secret は不要になりました（あっても害はないので残してもOK）
 
-`waka-readme-stats` は **コミット履歴を解析して時間帯別・曜日別グラフを作る** ため、デフォルトの `GITHUB_TOKEN` では権限が足りません。PAT が必要です。
-
-1. [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new) を開く
-2. 設定値：
-   - **Note**: `waka-readme-stats`
-   - **Expiration**: お好みで（推奨: No expiration か 1 year）
-   - **Scopes**: ✅ `repo` ✅ `read:user` にチェック
-3. **Generate token** を押してトークン（`ghp_xxxx...`）をコピー
-4. [リポジトリの Secrets 設定](https://github.com/dufaro/dufaro/settings/secrets/actions/new) を開く
-5. 以下を入力して **Add secret**
-   - **Name**: `GH_TOKEN`
-   - **Secret**: コピーしたPAT
-
-## 3. WakaTime プラグインをエディタに入れる（まだなら）
+## 2. WakaTime プラグインをエディタに入れる（まだなら）
 
 実際にコーディング時間を計測するために必要です。
 
@@ -35,33 +22,37 @@ README.md がプロフィールページに自動で表示されます。
 - **JetBrains 系**: Plugins から `WakaTime`
 - その他のエディタ: [公式プラグイン一覧](https://wakatime.com/plugins)
 
-## 4. ワークフローを手動で動かして確認
+プラグインを入れると初回起動時に API Key を求められるので、上と同じキーを貼り付けます。
+
+## 3. ワークフローを手動で動かして確認
 
 1. [Actions タブ](https://github.com/dufaro/dufaro/actions) を開く
-2. 左サイドバーから **Waka Readme Stats** を選択
+2. 左サイドバーから **Waka Readme** を選択
 3. **Run workflow** → **Run workflow** をクリック
-4. 数分後、README の `<!--START_SECTION:waka-->` の部分が自動で更新されます
+4. **30秒〜1分程度**で README が自動更新されます
 
 以降は毎日 **JST 朝7時** に自動更新されます ⏰
 
-## 5. 自動表示されるもの
+## 4. 表示されるもの
 
-WakaTime セクションには以下が **テキストベースのバーグラフ** で表示されます：
+WakaTime セクションには **過去7日間** の以下が表示されます：
 
-- 🌞 **時間帯別の活動分布**（朝・昼・夕方・夜のコミット比率）
-- 📅 **曜日別の活動分布**（一番生産的な曜日が分かる）
-- 💬 **今週使った言語**（Swift / TypeScript など、時間付きで）
-- 🔥 **エディタ別の時間**（Xcode / VS Code など）
-- 💻 **OS別の時間**（macOS など）
-- 📊 **累計コーディング時間** と **書いたコード行数** のバッジ
+```text
+Swift        4 hrs 30 mins  ████████████░░░░░░░  60.00 %
+TypeScript   2 hrs 15 mins  ██████░░░░░░░░░░░░░  30.00 %
+JavaScript   45 mins        ██░░░░░░░░░░░░░░░░░  10.00 %
+```
+
+README にはこの他にも：
+- 🧑‍💻 自己紹介セクション
+- 🛠 使用技術バッジ
+- 📊 GitHub Stats カード（コミット数・スター数など）
+- 🏆 Top Languages（使用言語ランキング）
+- 🔥 Streak Stats（連続コミット日数）
+- 👀 プロフィール閲覧数カウンター
 
 ## トラブルシューティング
 
-- **WakaTime セクションが更新されない**
-  → Secrets 名が **`WAKATIME_API_KEY`** と **`GH_TOKEN`** の2つ揃っているか確認
-- **`Error: Resource not accessible by integration`**
-  → PAT の権限不足。`repo` と `read:user` にチェックが入っているか確認
-- **データが少ない / 出ない**
-  → エディタに WakaTime プラグインを入れて数日コーディングするとデータが溜まります
-- **Stats カードが表示されない**
-  → `github-readme-stats.vercel.app` の一時的な不調の可能性。少し時間を置いてリロード
+- **WakaTime の部分が更新されない** → Secrets の名前が `WAKATIME_API_KEY` か再確認
+- **データが少ない / 出ない** → エディタにプラグインを入れて数日コーディングすればデータが溜まります
+- **Stats カードが表示されない** → `github-readme-stats.vercel.app` 側の一時的な不調の可能性。少し時間を置いてリロード

@@ -40,10 +40,10 @@
 
 ---
 
-### ⏱ Code Activity (WakaTime)
+### ⏱ Weekly Coding Activity (WakaTime)
 
 <!--START_SECTION:waka-->
-WakaTime の統計はまだ取得されていません。GitHub Actions が初回実行されると、ここに **時間帯別・曜日別の活動分布**、**今週使った言語**、**エディタ別の時間** などが自動表示されます ⏳
+WakaTime の統計はまだ取得されていません。GitHub Actions が初回実行されると、ここに週間の言語別・エディタ別コーディング時間が自動表示されます ⏳
 <!--END_SECTION:waka-->
 
 ---
