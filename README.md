@@ -45,18 +45,16 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 18 May 2026 - To: 25 May 2026
+From: 19 May 2026 - To: 26 May 2026
 
-Total Time: 8 hrs 41 mins
+Total Time: 7 hrs 22 mins
 
-TypeScript    5 hrs 8 mins          ██████████████▓░░░░░░░░░░   59.06 %
-CSS           1 hr 36 mins          ████▓░░░░░░░░░░░░░░░░░░░░   18.44 %
-JavaScript    59 mins               ███░░░░░░░░░░░░░░░░░░░░░░   11.44 %
-HTML          29 mins               █▒░░░░░░░░░░░░░░░░░░░░░░░   05.69 %
-Markdown      18 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   03.50 %
-JSON          3 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.76 %
-Image (png)   1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.34 %
-Other         1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.27 %
+TypeScript    5 hrs 8 mins          █████████████████▒░░░░░░░   69.59 %
+CSS           1 hr 36 mins          █████▒░░░░░░░░░░░░░░░░░░░   21.73 %
+HTML          29 mins               █▓░░░░░░░░░░░░░░░░░░░░░░░   06.56 %
+Markdown      2 mins                ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.67 %
+Image (png)   1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.41 %
+Other         1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.32 %
 ```
 
 <!--END_SECTION:waka-->
