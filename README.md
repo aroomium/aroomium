@@ -45,17 +45,17 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 05 July 2026 - To: 12 July 2026
+From: 06 July 2026 - To: 13 July 2026
 
-Total Time: 5 hrs 55 mins
+Total Time: 5 hrs 51 mins
 
-TypeScript    2 hrs 3 mins          ████████▒░░░░░░░░░░░░░░░░   33.61 %
-HTML          1 hr 40 mins          ███████░░░░░░░░░░░░░░░░░░   27.45 %
-Swift         55 mins               ███▓░░░░░░░░░░░░░░░░░░░░░   15.09 %
-CSS           29 mins               ██░░░░░░░░░░░░░░░░░░░░░░░   08.17 %
-JavaScript    21 mins               █▒░░░░░░░░░░░░░░░░░░░░░░░   05.77 %
-Text          13 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   03.63 %
-Other         10 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.85 %
+TypeScript    2 hrs 3 mins          ████████▒░░░░░░░░░░░░░░░░   33.95 %
+HTML          1 hr 40 mins          ███████░░░░░░░░░░░░░░░░░░   27.73 %
+Swift         51 mins               ███▓░░░░░░░░░░░░░░░░░░░░░   14.23 %
+CSS           29 mins               ██░░░░░░░░░░░░░░░░░░░░░░░   08.25 %
+JavaScript    21 mins               █▒░░░░░░░░░░░░░░░░░░░░░░░   05.83 %
+Text          13 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   03.66 %
+Other         10 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.87 %
 ```
 
 <!--END_SECTION:waka-->
