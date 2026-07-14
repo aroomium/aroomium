@@ -19,7 +19,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           API_BASE_URL: https://wakatime.com/api
-          REPOSITORY: dufaro/dufaro
+          REPOSITORY: aroomium/aroomium
           SHOW_TITLE: "True"
           SECTION_NAME: "waka"
           BLOCKS: "░▒▓█"
