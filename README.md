@@ -45,15 +45,14 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 30 July 2026 - To: 06 August 2026
+From: 31 July 2026 - To: 07 August 2026
 
-Total Time: 3 hrs 19 mins
+Total Time: 1 hr 18 mins
 
-Swift        2 hrs 37 mins         ███████████████████▓░░░░░   78.91 %
-HTML         27 mins               ███▓░░░░░░░░░░░░░░░░░░░░░   14.03 %
-CSS          8 mins                █░░░░░░░░░░░░░░░░░░░░░░░░   04.40 %
-JavaScript   5 mins                ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.63 %
-Other        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.04 %
+HTML       39 mins               ████████████▒░░░░░░░░░░░░   49.88 %
+Python     31 mins               ██████████░░░░░░░░░░░░░░░   39.75 %
+Markdown   8 mins                ██▓░░░░░░░░░░░░░░░░░░░░░░   10.28 %
+Other      0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 %
 ```
 
 <!--END_SECTION:waka-->
