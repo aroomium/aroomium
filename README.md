@@ -45,13 +45,14 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 23 September 2026 - To: 30 September 2026
+From: 24 September 2026 - To: 01 October 2026
 
 Total Time: 28 mins
 
-Markdown   15 mins               ███████████░░░░░░░░░░░░░░   43.97 %
-XML        9 mins                ██████▒░░░░░░░░░░░░░░░░░░   24.97 %
-Other      7 mins                █████▒░░░░░░░░░░░░░░░░░░░   21.12 %
+Markdown   15 mins               █████████████▒░░░░░░░░░░░   53.74 %
+XML        9 mins                ███████▓░░░░░░░░░░░░░░░░░   30.53 %
+YAML       3 mins                ███░░░░░░░░░░░░░░░░░░░░░░   12.13 %
+Other      1 min                 █░░░░░░░░░░░░░░░░░░░░░░░░   03.59 %
 ```
 
 <!--END_SECTION:waka-->
